@@ -4,6 +4,9 @@ void main(){
   person1.printDetails();
   Person.DOB();
 
+<<<<<<< HEAD
   Person person2 = Person(name: 'Mahabub', age: 25, height: 5.6, sex: 'Male');
+=======
+>>>>>>> origin/master
   person2.printDetails();
 }
