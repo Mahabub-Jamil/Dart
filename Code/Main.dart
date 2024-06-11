@@ -1,12 +1,16 @@
+import "Animal.dart";
 import "Person.dart";
 void main(){
-  Person person1 = Person(name: 'Jamil', age: 24, height: 5.4, sex: 'Male');
-  person1.printDetails();
-  Person.DOB();
+  Person person1 = Person('Mahabub',24,5.4,'Male');
+  Person person2 = Person('Alip',13,4.5,'Male');
+  Employee emp1 = Employee('Jamil', 2021, 24, 5.4, 'Male', 'CSE');
+  emp1.details();
 
-<<<<<<< HEAD
-  Person person2 = Person(name: 'Mahabub', age: 25, height: 5.6, sex: 'Male');
-=======
->>>>>>> origin/master
-  person2.printDetails();
+
+  Human person = Human('Rafiq');
+  Lion lion = Lion('Mufasa');
+
+  person.characteristics();
+  lion.characteristics();
+  person.eat();
 }
