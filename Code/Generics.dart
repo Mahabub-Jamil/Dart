@@ -1,36 +1,28 @@
-class Calculator{
+class Calculator {
   // Generics.......
-  num Sum<T extends num>(T a, T b)
-  {
-    return a+b;
+    return a + b;
   }
 
-  T sendSomething<T>(T m)
-  {
     return m;
   }
 
-  String someList<K,V>(K key, V value){
+  String someList<K, V>(K key, V value) {
     return '$key : $value';
   }
   // Normal method.....
-  int sum(int a , int b)
-  {
-    return a+b;
+    return a + b;
   }
 
-  double floatingSum(double a , double b)
-  {
-    return a+b;
+    return a + b;
   }
-  Future<void> something() async{
+  Future<void> something() async {
     print("Before delay");
-    Future.delayed(Duration(seconds: 2)).then((_){
+    Future.delayed(Duration(seconds: 2)).then((_) {
       print("After 2 seconds");
     });
   }
-}
-Future<void> main() async{
+  }
+Future<void> main() async {
   Calculator calculate = Calculator();
   // Normal....
   print(calculate.sum(10, 20));

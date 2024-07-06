@@ -32,3 +32,10 @@ class Employee extends Person {
     print("${this.name} is in $department department. His Id is $id");
   }
 }
+void main() {
+  Person person1 = Person('Mahabub', 24, 5.4, 'Male');
+  Person person2 = Person('Alip', 13, 4.5, 'Male');
+  Person emp1 = Employee('Jamil', 2021, 24, 5.4, 'Male', 'CSE');
+  Employee emp2 = Employee('Jamil', 2021, 24, 5.4, 'Male', 'CSE');
+  emp2.printDetails();
+}

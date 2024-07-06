@@ -45,3 +45,12 @@ class Lion implements Animal{
   }
 
 }
+
+void main(){
+  Human person = Human('Rafiq');
+  Lion lion = Lion('Mufasa');
+
+  person.characteristics();
+  lion.characteristics();
+  person.eat();
+}
